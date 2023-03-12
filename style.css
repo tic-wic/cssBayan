@@ -77,4 +77,68 @@ select {
   }
 }
 
+body{
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
 
+  background-color: rgb(241, 237, 216);
+}
+.container{
+  max-width: 1920px;
+  margin: 0rem auto;
+  padding: 0rem auto;
+}
+@media (max-width:1920px){
+  .container{
+    max-width: 820px;
+  }
+}
+@media (max-width:820px){
+  .container{
+    max-width: 320px;
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+.bayan_title{
+  display: block;
+  cursor: pointer;
+}
+.bayan_title:hover {
+  color: rgb(1, 161, 161);
+
+  transition: .2s
+  ease-out;
+}
+
+.bayan_input{
+  width: 0;
+  height: 0;
+
+  -webkit-apperance: none;
+  appearance: none;
+
+  position: absolute;
+}
+.bayan_input:hover + .bayan_img{
+  display: block;
+}
+.bayan_input:checked + .bayan_img{
+  display: block;
+}
+
+.bayan_img{
+ display: none;
+
+ width: 19rem;
+ height: 15rem;
+
+ margin: auto;
+}
+
+img{
+  height: 15rem;
+  width: 15rem;
+}
